@@ -8,8 +8,9 @@ This folder contains the templates used to generate the static website for [sema
 To install [DocPad](http://github.com/docpad/docpad), the static site generator used to create the html for the site.
 ```
 npm install -g docpad
-docpad install eco;
-docpad update; docpad upgrade;
+docpad install eco --silent
+docpad update --silent 
+docpad upgrade --silent
 ```
 
 ### Generating SUI for Docs
@@ -32,8 +33,9 @@ To configure a different docs location modify [ tasks/docs.json](https://github.
 
 You can then start your docs server (and generate docs) using:
 ```
-#run from inside docs folder that will now contain the compiled docs - windows users can then navigate to http://localhost:9778
-docpad run
+#run from inside docs folder that will now contain the compiled docs 
+#windows users can then navigate to http://localhost:9778
+docpad run --silent
 ```
 
 To watch for changes from your ui folder to serve to your docs instance
