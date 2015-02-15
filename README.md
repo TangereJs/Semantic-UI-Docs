@@ -40,7 +40,7 @@ docpad run --silent
 
 To watch for changes from your ui folder to serve to your docs instance
 ```
-gulp serve-docs
+gulp serve-docs --theme default
 ```
 
 
